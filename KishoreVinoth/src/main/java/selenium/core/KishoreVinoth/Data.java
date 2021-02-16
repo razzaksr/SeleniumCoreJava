@@ -38,7 +38,7 @@ public class Data
 		Float curCtc=6.7F;String preLocation="Chennai";
 		System.out.println("Zealous Tech Corp");
 		System.out.println("Review your submission");
-		System.out.println("Role: "+role);
+		System.out.println("Role: "+role);// Role: Java Lead
 		System.out.println("Experience: "+experience);
 		System.out.println("Current Organisation: "+curOrg);
 		System.out.println("Current CTC: "+curCtc);
