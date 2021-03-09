@@ -2,58 +2,14 @@ package selenium.core.KishoreVinoth;
 
 import java.util.Scanner;
 
-/*
- * Looping statements:
-
-repetation
-to reduce time complexity
-
-start>> initialization
-step up>> iteration
-end>>condition
-
-
-4 types:
-
-//init
-while(cond)
-{
-// repeation statements
-// iter
-}
-
-
-for(init;cond;iter)
-{
-// repeation
-}
-
-//foreach
-for(type local:source	)
-{
-
-}
-
-//init
-do
-{
-//repeation
-//iter
-}while(cond);
-
-
-continue>> skip
-break>> come out
- */
-
-public class LoopIntro 
+public class DoWhile 
 {
 	public static void main(String[] args) 
 	{
 		// Theatre ticket booking
 		Scanner scan=new Scanner(System.in);
-		double time=12.30;int available=40;
-		while(time<=13.31&&available>0)
+		double time=12.30;int available=0;
+		do
 		{
 			System.out.println("How many ticket you need: ");
 			int count=scan.nextInt();
@@ -76,7 +32,7 @@ public class LoopIntro
 				System.out.println("We have only "+available);
 			}
 			time+=0.01;
-		}
+		}while(time<=13.31&&available>0);
 		scan.close();
 	}
 }
