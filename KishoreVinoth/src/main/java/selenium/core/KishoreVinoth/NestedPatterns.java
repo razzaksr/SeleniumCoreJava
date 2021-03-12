@@ -1,5 +1,7 @@
 package selenium.core.KishoreVinoth;
 
+import java.util.Scanner;
+
 public class NestedPatterns 
 {
 	public static void main(String[] args) 
@@ -23,9 +25,29 @@ public class NestedPatterns
 			}
 			for(int data=1;data<=row;data++)
 			{
-				System.out.print("@");
+				System.out.print("@ ");
 			}
 			System.out.println();
 		}
+		
+		//pyramid
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Tell us how many row you want: ");
+		int maxRow=scan.nextInt();
+		int limit=1;
+		for(int row=1;row<=maxRow;row++)
+		{
+			for(int space=maxRow-1;space>=row;space--)
+			{
+				System.out.print(" ");
+			}
+			for(int data=1;data<=limit;data++)
+			{
+				System.out.print("@");
+			}
+			System.out.println();
+			limit+=2;
+		}
+		scan.close();
 	}
 }
