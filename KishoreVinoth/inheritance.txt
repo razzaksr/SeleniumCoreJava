@@ -1,0 +1,37 @@
+Inheritance:
+Object reusable
+
+Interface:
+members: var/obj, method
+
+Parent/ Super>>> Provider
+Derived/ child>> Consumer
+
+
+syntax:
+DerivedClass extends BaseClass
+DerivedClass implements interface
+
+5 types:
+single:
+DerivedClass extends BaseClass
+derivedinterface extends baseinterface
+DerivedClass implements interface
+
+multi level:
+DerivedClass1 extends BaseClass
+DerivedClass2 extends DerivedClass1
+
+hierarchy:
+DerivedClass1 extends BaseClass
+DerivedClass2 extends BaseClass
+
+multiple:
+dont:
+derivedclass extends baseclass1,baseclass2
+do:
+derivedclass implements interface1,interface2,.....
+derivedclass extends baseclass implements interface1
+
+hybrid:
+combination of more than one form of inheritance

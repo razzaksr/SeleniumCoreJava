@@ -11,7 +11,13 @@ public class Maintain
 	Assembly[] tn=new Assembly[10];// array of assembly objects 
 	public static void main(String[] args) 
 	{
-		Assembly a1=new Assembly("Salem North","Salem","Rajendran",new String[] {"Road","water"},32000,400000.4);
+		Assembly a1=new Assembly();
+		a1.setName("Salem North");
+		a1.setDistrict("Salem");
+		a1.setSittingMLA("Rajendran");
+		a1.setIsues(new String[] {"Road","water"});
+		a1.setPopulation(32000);
+		a1.setDevAmt(400000.4);
 		Assembly a2=new Assembly("Salem East","Salem","KAnmani",new String[] {"Road","water"},92000,487890.4);
 		Assembly a3=new Assembly("Mettur","Salem","Ravi",new String[] {"Road","eb"},220300,600000.4);
 		Assembly a4=new Assembly("Salem South","Salem","Prbakaran",new String[] {"water","polution"},176534,800000.4);
