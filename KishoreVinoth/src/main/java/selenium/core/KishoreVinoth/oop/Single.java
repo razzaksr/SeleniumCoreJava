@@ -6,6 +6,10 @@ public class Single extends Account
 	{
 		System.out.println("Single class method");
 	}
+	public String toString()
+	{
+		return "Derived class method "+super.toString();
+	}
 	public static void main(String[] args) 
 	{
 		Single s=new Single();
